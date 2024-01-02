@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: jtsmedley/ipfs-action@a1f7b100f040ca9718fb1e8bd50bcf3115acee3b
+      - uses: jtsmedley/ipfs-action@9d0041b2581c2829d0920d922900aa4aad95cbda
         with:
           path: ./src
           service: filebase
