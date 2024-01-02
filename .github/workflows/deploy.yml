@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: jtsmedley/ipfs-action@feat-filebase-ipns
         with:
-          path: ../src
+          path: ./../src
           service: filebase
           pinName: 'ipfs-action'
           filebaseBucket: ${{ vars.FILEBASE_BUCKET }}
