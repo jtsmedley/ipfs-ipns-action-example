@@ -7,12 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: aquiladev/ipfs-action@v0.3.1
-        id: filebase
+      - uses: jtsmedley/ipfs-action@feat-filebase-ipns
         with:
-          path: ./src
+          path: src
           service: filebase
           pinName: 'ipfs-action'
           filebaseBucket: ${{ vars.FILEBASE_BUCKET }}
           filebaseKey: ${{ secrets.FILEBASE_KEY }}
           filebaseSecret: ${{ secrets.FILEBASE_SECRET }}
+          key: ${{ vars.FILEBASE_NAME }}
